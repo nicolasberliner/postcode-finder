@@ -1,2 +1,2 @@
-web: gunicorn zoopla:app
+web: gunicorn app/zoopla:app
 
