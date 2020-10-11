@@ -1,2 +1,2 @@
-web: gunicorn --bind 0.0.0.0:$PORT app zoopla:app
+web: gunicorn app zoopla:app
 
