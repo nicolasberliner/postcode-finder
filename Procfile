@@ -1,2 +1,2 @@
-web: gunicorn -b :$PORT app zoopla:app
+web: gunicorn app zoopla:app $PORT
 
