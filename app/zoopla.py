@@ -3,6 +3,7 @@ import sys
 from datetime import datetime
 import base64
 import requests
+import os
 import json
 
 
@@ -44,4 +45,5 @@ def range():
     return render_template("range.html", postcode=outcode, rangee=rangee, response=str(sendString), listarray = str(outcodeArray))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=2222)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
