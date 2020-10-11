@@ -1,2 +1,2 @@
-web: gunicorn app zoopla:app $PORT
+web: gunicorn zoopla:app $PORT --chdir app
 
